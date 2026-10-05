@@ -7,8 +7,9 @@
       "dependencies": {
         "@reciple/core": "^10.1.0",
         "@reciple/jsx": "^10.1.0",
+        "@reciple/modules": "^10.3.2",
         "discord.js": "^14.27.0",
-        "reciple": "^10.3.0",
+        "reciple": "^10.3.2",
       },
       "devDependencies": {
         "@types/node": "^26.1.1",
@@ -51,6 +52,8 @@
     "@reciple/core": ["@reciple/core@10.2.0", "", { "dependencies": { "@reciple/utils": "^10.0.4", "@sapphire/shapeshift": "^4.0.0", "@sapphire/snowflake": "^3.5.3", "qweery": "^0.0.9", "split-string": "^6.1.0", "ts-mixer": "^6.0.4" }, "peerDependencies": { "discord.js": "^14.27.0" } }, "sha512-UmhXe4sZoimM8hmo5Db87H1vgK1qQ8pqvs93J8h255+lPH98Z7dQCsU5zjPcWDEl87mgyWzokLlfMPcZhxIJTw=="],
 
     "@reciple/jsx": ["@reciple/jsx@10.1.0", "", { "peerDependencies": { "discord.js": "^14.26.4" } }, "sha512-uDeSecTO28v+CfGgNsoTw661uLLsOwDW0aj9/6dGz9EZrZSqkoDQ4mDS7EpD5Wkeh9YZSxqqzoBq8FkFPvVpqQ=="],
+
+    "@reciple/modules": ["@reciple/modules@10.3.2", "", { "dependencies": { "@sapphire/snowflake": "^3.5.5" }, "peerDependencies": { "discord.js": "^14.27.0", "reciple": "^10.3.0" } }, "sha512-4/mT4Jq5dMyqYpe5uWot3S4VPmFpNp7zKXctntMeUW34uYflzR75i6Phq81/sk5F2QZMb7++uLXxnGUbMupgeQ=="],
 
     "@reciple/utils": ["@reciple/utils@10.0.4", "", { "dependencies": { "@prtty/prtty": "^1.1.2", "pkg-types": "^2.3.0", "radash": "^12.1.1" } }, "sha512-pQQDBlJ5oeweuVxdqhkeuY74Os6iRxWZlPpvH5+tkRJnp9fFaA82DWy4WRIExi0o35JCgIOdTa52XCmnCDkHVQ=="],
 
@@ -332,7 +335,7 @@
 
     "readdirp": ["readdirp@3.6.0", "", { "dependencies": { "picomatch": "^2.2.1" } }, "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA=="],
 
-    "reciple": ["reciple@10.3.0", "", { "dependencies": { "@clack/prompts": "^1.7.0", "@dotenvx/dotenvx": "^2.14.0", "@prtty/print": "^1.1.3", "@prtty/prtty": "^1.1.2", "@reciple/utils": "^10.0.4", "@sapphire/shapeshift": "^4.0.0", "@sapphire/snowflake": "^3.5.5", "commander": "^15.0.0", "github-slugger": "^2.0.0", "jiti": "^2.7.0", "micromatch": "^4.0.8", "nypm": "^0.6.8", "pkg-types": "^2.3.1", "tinyglobby": "^0.2.17", "ts-mixer": "^6.0.4", "tsdown": "^0.22.9" }, "peerDependencies": { "@reciple/core": "^10.1.0", "discord.js": "^14.27.0" }, "bin": { "reciple": "dist/bin/reciple.mjs" } }, "sha512-azTMXt1DKFr4waOEShDjMGj03PbtWH2QUKW5108eyponuv8Ckka2q3rRFBGWpAYhs/TMIupYuEynZRqTWrtL9w=="],
+    "reciple": ["reciple@10.3.2", "", { "dependencies": { "@clack/prompts": "^1.7.0", "@dotenvx/dotenvx": "^2.14.0", "@prtty/print": "^1.1.3", "@prtty/prtty": "^1.1.2", "@reciple/utils": "^10.0.4", "@sapphire/shapeshift": "^4.0.0", "@sapphire/snowflake": "^3.5.5", "commander": "^15.0.0", "github-slugger": "^2.0.0", "jiti": "^2.7.0", "micromatch": "^4.0.8", "nypm": "^0.6.8", "pkg-types": "^2.3.1", "tinyglobby": "^0.2.17", "ts-mixer": "^6.0.4", "tsdown": "^0.22.9" }, "peerDependencies": { "@reciple/core": "^10.2.0", "discord.js": "^14.27.0" }, "bin": { "reciple": "dist/bin/reciple.mjs" } }, "sha512-usPRJhhPi3jXUtE8Y0hhiKJvELLl+kwrt96pgM2aLWpAlWDMUcdcnyRVclM24dgrrM+mIx1/lgneP8iroZhZtA=="],
 
     "resolve-pkg-maps": ["resolve-pkg-maps@1.0.0", "", {}, "sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw=="],
 
