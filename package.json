@@ -13,6 +13,7 @@
     "@reciple/core": "^10.1.0",
     "@reciple/jsx": "^10.1.0",
     "@reciple/modules": "^10.3.2",
+    "@reciple/utils": "^10.0.4",
     "discord.js": "^14.27.0",
     "owospeak": "^1.0.4",
     "reciple": "^10.3.2"
