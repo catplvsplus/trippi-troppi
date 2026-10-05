@@ -56,7 +56,7 @@ export class RockPaperScissors {
             components: <>
                 <Container accentColor={this.getAccentColor()}>
                     <TextDisplay>
-                        <Heading level={3}>{this.user}'s turn</Heading>
+                        <Heading level={3}>⏳ {this.user}'s turn</Heading>
                     </TextDisplay>
                     <ActionRow>
                         {this.getButtons()}
@@ -99,7 +99,7 @@ export class RockPaperScissors {
             components: <>
                 <Container accentColor={this.getAccentColor()}>
                     <TextDisplay>
-                        <Heading level={3}>{this.enemy ? `${this.enemy}'s turn` : 'Waiting for opponent...'}</Heading>
+                        <Heading level={3}>⏳ {this.enemy ? `${this.enemy}'s turn` : 'Waiting for opponent...'}</Heading>
                     </TextDisplay>
                     <ActionRow>
                         {this.getButtons()}
@@ -133,7 +133,7 @@ export class RockPaperScissors {
                 components: <>
                     <Container accentColor={this.getAccentColor()}>
                         <TextDisplay>
-                            <Heading level={3}>Game timed out</Heading>
+                            <Heading level={3}>❌ Game timed out</Heading>
                         </TextDisplay>
                     </Container>
                 </>
@@ -148,7 +148,7 @@ export class RockPaperScissors {
             components: <>
                 <Container accentColor={this.getAccentColor()}>
                     <TextDisplay>
-                        <Heading level={3}>{this.remarks === 'draw' ? 'It\'s a draw!' : `${this.winner} wins!`}</Heading>
+                        <Heading level={3}>{this.remarks === 'draw' ? '🟰 It\'s a draw!' : `🏆 ${this.winner} wins!`}</Heading>
                         <LineBreak/>
                         {this.getChoiceEmoji(this.userChoice)} {this.user}
                         <LineBreak/>
