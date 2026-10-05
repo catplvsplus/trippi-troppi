@@ -13,7 +13,7 @@ export class PPCommand extends SlashCommandModule {
         const user = interaction.options.getUser('user') ?? interaction.user;
         const ppSize = Math.floor(Math.random() * 10) + 1;
 
-        await interaction.reply(`-# ${user}'s pp size is ${ppSize} inches!\n## 8${'='.repeat(ppSize)}D`);
+        await interaction.reply(`-# ${user}'s pp size is ${ppSize} inches!\n> ## 8${'='.repeat(ppSize)}D`);
     }
 }
 
