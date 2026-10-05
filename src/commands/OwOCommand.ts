@@ -5,7 +5,8 @@ import { convert } from 'owospeak';
 export class OwOCommand extends ContextMenuCommandModule {
     public data = new ContextMenuCommandBuilder()
         .setName('UwUify')
-        .setType(ApplicationCommandType.Message);
+        .setType(ApplicationCommandType.Message)
+        .toJSON();
 
     public async execute({ interaction }: ContextMenuCommand.ExecuteData): Promise<void> {
         if (!interaction.isMessageContextMenuCommand()) return;

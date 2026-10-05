@@ -16,6 +16,10 @@ export const client = new Client({
         'Guilds',
         'GuildMessages'
     ],
+    allowedMentions: {
+        parse: [],
+        repliedUser: false
+    },
     preconditions: [
         new CooldownCommandPrecondition({
             scope: [

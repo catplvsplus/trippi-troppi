@@ -5,7 +5,8 @@ import { ContextMenuCommand, ContextMenuCommandBuilder, ContextMenuCommandModule
 export class AvatarCommand extends ContextMenuCommandModule {
     public data = new ContextMenuCommandBuilder()
         .setName('Avatar')
-        .setType(ApplicationCommandType.User);
+        .setType(ApplicationCommandType.User)
+        .toJSON();
 
     public async execute({ interaction }: ContextMenuCommand.ExecuteData): Promise<void> {
         if (!interaction.isUserContextMenuCommand()) return;
