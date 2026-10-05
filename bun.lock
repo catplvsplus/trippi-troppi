@@ -9,6 +9,7 @@
         "@reciple/jsx": "^10.1.0",
         "@reciple/modules": "^10.3.2",
         "discord.js": "^14.27.0",
+        "owospeak": "^1.0.4",
         "reciple": "^10.3.2",
       },
       "devDependencies": {
@@ -318,6 +319,8 @@
     "object-keys": ["object-keys@1.1.1", "", {}, "sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA=="],
 
     "obug": ["obug@2.2.1", "", {}, "sha512-XrsrhT5sybtKI6wakr2SPOlGZWWYbUXZ7a0jT8/QOeAPau+1X/bSegNe5YR75oJmEZQbKningirmGOEJCIk61Q=="],
+
+    "owospeak": ["owospeak@1.0.4", "", {}, "sha512-IeVSx/IpQsRlh6c6TKCHH6Zupivo4T8ebn8GXuMfvfxNh8QaFUrPtlZLodqKJYQxOk2IlW/Nc36d95AhhGbAEg=="],
 
     "pathe": ["pathe@2.0.3", "", {}, "sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w=="],
 
