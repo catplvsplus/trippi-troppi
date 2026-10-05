@@ -9,7 +9,6 @@ export class RPSCommand extends SlashCommandModule {
         .addUserOption(option => option
             .setName('user')
             .setDescription('The user to play against')
-            .setRequired(true)
         )
         .toJSON();
 
@@ -17,9 +16,9 @@ export class RPSCommand extends SlashCommandModule {
         if (!interaction.isChatInputCommand()) return;
 
         const user = interaction.user;
-        const enemy = interaction.options.getUser('user', true);
+        const enemy = interaction.options.getUser('user');
 
-        if (user.id === enemy.id) {
+        if (user.id === enemy?.id) {
             await interaction.reply({
                 flags: [MessageFlags.Ephemeral],
                 content: 'You cannot play against yourself!'
@@ -29,7 +28,7 @@ export class RPSCommand extends SlashCommandModule {
 
         const game = new RockPaperScissors({
             user,
-            enemy,
+            enemy: enemy ?? undefined,
             timeout: 30000
         });
 

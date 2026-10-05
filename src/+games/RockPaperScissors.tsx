@@ -1,4 +1,4 @@
-import { ActionRow, Bold, Button, Container, Heading, LineBreak, TextDisplay } from '@reciple/jsx';
+import { ActionRow, Button, Container, Heading, LineBreak, TextDisplay } from '@reciple/jsx';
 import { ButtonStyle, Colors, ComponentType, MessageFlags, type ButtonBuilder, type RepliableInteraction, type User } from 'discord.js';
 import { setTimeout } from 'node:timers/promises';
 
@@ -56,7 +56,7 @@ export class RockPaperScissors {
             components: <>
                 <Container accentColor={this.getAccentColor()}>
                     <TextDisplay>
-                        <Heading>{this.user}'s turn</Heading>
+                        <Heading level={3}>{this.user}'s turn</Heading>
                     </TextDisplay>
                     <ActionRow>
                         {this.getButtons()}
@@ -99,7 +99,7 @@ export class RockPaperScissors {
             components: <>
                 <Container accentColor={this.getAccentColor()}>
                     <TextDisplay>
-                        <Heading>{this.enemy ? `${this.enemy}'s turn` : 'Waiting for opponent...'}</Heading>
+                        <Heading level={3}>{this.enemy ? `${this.enemy}'s turn` : 'Waiting for opponent...'}</Heading>
                     </TextDisplay>
                     <ActionRow>
                         {this.getButtons()}
@@ -148,11 +148,11 @@ export class RockPaperScissors {
             components: <>
                 <Container accentColor={this.getAccentColor()}>
                     <TextDisplay>
-                        <Heading>{this.remarks === 'draw' ? 'It\'s a draw!' : `${this.winner} wins!`}</Heading>
+                        <Heading level={3}>{this.remarks === 'draw' ? 'It\'s a draw!' : `${this.winner} wins!`}</Heading>
                         <LineBreak/>
-                        {this.user} chose <Bold>{this.getChoiceEmoji(this.userChoice)} {this.userChoice}</Bold>
+                        {this.getChoiceEmoji(this.userChoice)} {this.user}
                         <LineBreak/>
-                        {this.enemy} chose <Bold>{this.getChoiceEmoji(this.enemyChoice)} {this.enemyChoice}</Bold>
+                        {this.getChoiceEmoji(this.enemyChoice)} {this.enemy}
                     </TextDisplay>
                 </Container>
             </>
@@ -200,11 +200,11 @@ export class RockPaperScissors {
     public getChoiceEmoji(choice: RockPaperScissors.Choice): string {
         switch (choice) {
             case RockPaperScissors.Choice.Rock:
-                return '✊';
+                return '🪨';
             case RockPaperScissors.Choice.Paper:
-                return '✋';
+                return '📄';
             case RockPaperScissors.Choice.Scissors:
-                return '✌️';
+                return '✂️';
         }
     }
 }
