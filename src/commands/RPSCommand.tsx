@@ -36,3 +36,5 @@ export class RPSCommand extends SlashCommandModule {
         await game.play(interaction);
     }
 }
+
+export default new RPSCommand();

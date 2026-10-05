@@ -71,7 +71,10 @@ export class RockPaperScissors {
                 componentType: ComponentType.Button,
                 time: this.timeout
             })
-            .then(i => i.customId as RockPaperScissors.Choice)
+            .then(async i => {
+                await i.deferUpdate();
+                return i.customId as RockPaperScissors.Choice;
+            })
             .catch(() => null);
 
         if (!userChoice) {
@@ -113,7 +116,10 @@ export class RockPaperScissors {
                     componentType: ComponentType.Button,
                     time: this.timeout
                 })
-                .then(i => i.customId as RockPaperScissors.Choice)
+                .then(async i => {
+                    await i.deferUpdate();
+                    return i.customId as RockPaperScissors.Choice;
+                })
                 .catch(() => null);
 
         if (this.enemy?.bot) {
