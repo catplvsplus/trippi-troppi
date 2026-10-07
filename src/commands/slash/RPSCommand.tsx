@@ -1,5 +1,5 @@
 import { SlashCommandBuilder, SlashCommandModule, type SlashCommand } from 'reciple';
-import { RockPaperScissors } from '../+games/RockPaperScissors.js';
+import { RockPaperScissors } from '../../+games/RockPaperScissors.js';
 import { MessageFlags } from 'discord.js';
 
 export class RPSCommand extends SlashCommandModule {

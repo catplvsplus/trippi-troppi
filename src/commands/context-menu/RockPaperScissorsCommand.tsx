@@ -1,6 +1,6 @@
 import { ApplicationCommandType, MessageFlags } from 'discord.js';
 import { ContextMenuCommandBuilder, ContextMenuCommandModule, type ContextMenuCommand } from 'reciple';
-import { RockPaperScissors } from '../+games/RockPaperScissors.js';
+import { RockPaperScissors } from '../../+games/RockPaperScissors.js';
 
 export class RockPaperScissorsCommand extends ContextMenuCommandModule {
     public data = new ContextMenuCommandBuilder()
